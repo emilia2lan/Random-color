@@ -1,5 +1,8 @@
-var randomColor = require('randomcolor'); // import the script
+var randomColor = require('randomcolor'); // import the script from randomColor
 var color = randomColor(); // a hex code for an attractive color
+
+const chalk = require('chalk'); // import the script from chalk
+const log = console.log;
 
 //console.log(process.argv[2]);
 const myColor = process.argv[2];
@@ -9,7 +12,8 @@ const inputColor = randomColor ({
     luminosity: 'light',
     hue: myColor
  });
-//console.log(myColor);
+ 
+ //console.log(myColor);
 //console.log(inputColor);
 
  let stringHash = '';
@@ -27,13 +31,16 @@ const inputColor = randomColor ({
      if (a < 5 || a >= 26) {
          stringHashsht = stringHashsht + '#';
     }else {
-        stringHashsht = stringHashsht + ' ';
+        stringHashsht = stringHashsht + '';
     }
     a++;
     } while (a < 31);
-//console.log(stringHashsht);
+  //console.log(stringHashsht);
 
-console.log(stringHash);
+ for (const myColor = process.argv[2]) {
+     chalk.hex(myColor);
+ }
+
 console.log(stringHash);
 console.log(stringHash);
 console.log('####       '+ '       ' + '        #####');
