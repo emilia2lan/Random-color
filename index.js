@@ -1,4 +1,4 @@
-const randomColor = require('randomColor'); // a hex code for a hex color
+const randomColor = require('randomcolor'); // a hex code for a hex color
 const chalk = require('chalk'); // a chalk code
 
 // console.log(process.argv[2]);
