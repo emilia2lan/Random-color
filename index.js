@@ -1,7 +1,5 @@
 const randomColor = require('randomcolor'); // a color hex  library
 const chalk = require('chalk'); // a chalk library
-const longString = '##################################';
-const shortString = '##########';
 
 const myColor = randomColor({
   luminosity: process.argv[3],
