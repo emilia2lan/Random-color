@@ -7,7 +7,6 @@ const myColor = randomColor({
 });
 
 // prints a hex color in a colored square
-
 console.log(
   chalk.hex(myColor)(`
 ##################################
